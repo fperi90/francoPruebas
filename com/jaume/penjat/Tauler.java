@@ -25,4 +25,22 @@ public class Tauler {
         this.vides = intents;
         paraulaEncertada = new String[paraulaSecreta.length()];
     }
+
+
+  /**
+     * DTO after this line
+     */
+    //Getters for the instance variables
+    public char[] getParaulaSecreta(){
+        return paraulaSecreta.toCharArray();
+    }
+
+    public int getIntents() {
+        return vides;
+    }
+
+    public String[] getPalabraEndevinada(){
+        return paraulaEncertada;
+    }
+
 }
