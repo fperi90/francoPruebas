@@ -25,6 +25,31 @@ public class Tauler {
         this.vides = intents;
         paraulaEncertada = new String[paraulaSecreta.length()];
     }
+
+    /**
+     * Functional methods
+     */
+    public String verificar(String letra) {
+        boolean isInList = false;
+        if (letra.length() == 1){
+            for (int i = 0; i < getParaulaSecreta().length; i++){
+                if (letra.equals(Character.toString(getParaulaSecreta()[i]))) {
+                    paraulaEncertada[i] = letra;
+                    isInList = true;
+                }
+            }
+            if (!isInList){
+                this.vides --;
+                return "Has fallat";
+
+            } else {
+                return "Lletra encertada";
+            }
+        } else {
+            return "Lletra incorrecte";
+        }
+    }
+
   /**
      * Graphic methods
      */
