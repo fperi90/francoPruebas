@@ -26,6 +26,7 @@ public class Tauler {
         paraulaEncertada = new String[paraulaSecreta.length()];
     }
 
+
     /**
      * Functional methods
      */
@@ -50,7 +51,8 @@ public class Tauler {
         }
     }
 
-  /**
+
+    /**
      * Graphic methods
      */
     public String imprimir() {
@@ -67,11 +69,12 @@ public class Tauler {
         return paraulaMostrar;
     }
 
-	  public boolean hasGuanyat() {
+    public boolean hasGuanyat() {
         return Arrays.equals(getPalabraEndevinada(), paraulaSecreta.split(""));
     }
 
-  /**
+
+    /**
      * DTO after this line
      */
     //Getters for the instance variables
