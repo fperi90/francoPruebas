@@ -25,7 +25,15 @@ public class Tauler {
         this.vides = intents;
         paraulaEncertada = new String[paraulaSecreta.length()];
     }
-<<<<<<< HEAD
+
+
+    public String imprimirVides() {
+        if (vides == 1){
+            return "Et queda " + vides + " vida de " + intents;
+        } else {
+            return "Et queden " + vides + " vides de " + intents;
+        }
+    }
 
 
   /**
@@ -45,8 +53,3 @@ public class Tauler {
     }
 
 }
-=======
-	//Aqui jose, pon los geters y setters de las variables de la clase plis, así puedo seguir trabajando
-}
-
->>>>>>> develop
