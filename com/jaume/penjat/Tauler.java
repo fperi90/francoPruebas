@@ -67,15 +67,9 @@ public class Tauler {
         return paraulaMostrar;
     }
 
-
-    public String imprimirVides() {
-        if (vides == 1){
-            return "Et queda " + vides + " vida de " + intents;
-        } else {
-            return "Et queden " + vides + " vides de " + intents;
-        }
+	  public boolean hasGuanyat() {
+        return Arrays.equals(getPalabraEndevinada(), paraulaSecreta.split(""));
     }
-
 
   /**
      * DTO after this line
@@ -95,4 +89,4 @@ public class Tauler {
 
 }
 
->>>>>>> develop
+
